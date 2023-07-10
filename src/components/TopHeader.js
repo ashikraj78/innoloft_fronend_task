@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 function TopHeader() {
   const navigate = useNavigate();
   const { productData } = useSelector(counterStates);
-  const app_id = process.env.REACT_APP_ID;
+  const app_id = process.env.REACT_APP_ID || 1;
   const dispatch = useDispatch();
   const [configData, setConfigData] = useState(null);
   useEffect(() => {
